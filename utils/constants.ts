@@ -1,0 +1,16 @@
+import TrainingScreen from '@/screens/TrainingScreen';
+
+export const LOGIN_ROUTE    =  'LoginScreen'
+export const REGISTER_ROUTE =  'RegisterScreen'
+export const MENU_ROUTE     =  'MenuScreen'
+export const HOME_ROUTE     =  'HomeScreen'
+export const PRODUCTS_ROUTE =  'ProductsScreen'
+export const USER_ROUTE     =  'UserScreen'
+export const MEAL_CREATE_ROUTE     =  'MealCreateScreen'
+export const MEAL_UPDATE_ROUTE     =  'MealUpdateScreen'
+export const RECOMMENDATIONS_ROUTE =   'RecommendationScreen'
+export const GOAL_ROUTE =   'GoalScreen'
+export const GOAL_CREATE_ROUTE =   'GoalCreateScreen'
+export const TRAINING_ROUTE =   'TrainingScreen'
+export const STATISTICS_ROUTE =   'StatisticsScreen'
+export const RECOMMENDATION_ONE_ROUTE =   'RecommendationOneScreen'
