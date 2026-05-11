@@ -5,7 +5,7 @@ import { axiosClassic } from '../api/interceptors'
 export const authService = {
 	async login(data: ILoginForm) {
 		const response = await axiosClassic.post<IAuthResponse>(
-			`/auth/login`,
+			`/auth/signin`,
 			data
 		)
 
@@ -17,7 +17,7 @@ export const authService = {
 
 	async register(data: IRegisterForm) {
 		const response = await axiosClassic.post<IAuthResponse>(
-			`/auth/register`,
+			`/auth/signup`,
 			data
 		)
 
@@ -28,7 +28,7 @@ export const authService = {
 
 	async getNewTokens() {
 		const response = await axiosClassic.post<IAuthResponse>(
-			'/auth/login/access-token'
+			'/auth/signin/access-token'
 		)
 
 		if (response.data.accessToken) saveTokenStorage(response.data.accessToken)

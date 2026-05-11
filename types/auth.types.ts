@@ -20,7 +20,7 @@ export interface IUser {
 	id: number
 	name: string
 	email: string
-  age : number,
+    age : number,
 	gender:EnumUserGender
 }
 

@@ -7,10 +7,10 @@ export interface IDailySummariesResponse extends IBase{
     height: number,
     mealsCount : number,
 
-    dailyCalories : number,
-    dailyProtein : number,
-    dailyFat : number,
-    dailyCarbs : number
+    calories : number,
+    protein : number,
+    fat : number,
+    carbs : number
 }
 
 export type TypeDailySummariesCreate =  {

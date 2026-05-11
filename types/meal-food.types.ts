@@ -6,10 +6,10 @@ export interface IMealFoodResponse extends IBase {
     mealId             : string,
     foodId             : string,
 
-    calculatedCalories : number,
-    calculatedProtein  : number,
-    calculatedFat      : number,
-    calculatedCarbs    : number,
+    calories : number,
+    protein  : number,
+    fat      : number,
+    carbs    : number,
 
     food: IFoodResponse
 }

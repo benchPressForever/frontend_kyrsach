@@ -1,4 +1,3 @@
-import { IFoodResponse } from "./food.types";
 import { IMealFoodResponse } from "./meal-food.types";
 import { IBase } from "./root.types";
 
@@ -7,10 +6,10 @@ export interface IMealResponse extends IBase {
     timeMeal : Date,
     notes: string,
 
-    totalCalories : number,
-    totalProtein  : number,
-    totalFat      : number,
-    totalCarbs    : number,
+    calories : number,
+    protein  : number,
+    fat      : number,
+    carbs    : number,
 }
 
 export interface IMealGetResponse extends IMealResponse{
@@ -21,8 +20,9 @@ export interface IMealGetResponse extends IMealResponse{
 
 export type TypeMealFormCreate = {
     name: string;
-    timeMeal: Date;
+    time: Date;
     notes: string;
+    dailyId:string;
 }
 
 

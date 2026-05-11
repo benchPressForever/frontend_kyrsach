@@ -3,12 +3,11 @@ import axios, { type CreateAxiosDefaults } from 'axios'
 import { errorCatch } from './error'
 import { getAccessToken, removeFromStorage } from '../services/auth-token.service'
 import { authService } from '../services/auth.service'
-import { API_URL } from '@env'
 
 
 
 const options: CreateAxiosDefaults = {
-	baseURL: 'http://192.168.3.5:4201/api',
+	baseURL: 'http://192.168.1.56:9090/api',
 	headers: {
 		'Content-Type': 'application/json'
 	},
